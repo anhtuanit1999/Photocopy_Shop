@@ -1,0 +1,51 @@
+/*!
+ * Start Bootstrap - Shop Homepage (https://startbootstrap.com/template/shop-homepage)
+ * Copyright 2013-2020 Start Bootstrap
+ * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-shop-homepage/blob/master/LICENSE)
+ */
+body {
+  padding-top: 56px;
+
+}
+.navb{
+  background-color: #3d84b8;
+}
+.shop_menu{
+  background-color: #F5F5F5;
+}
+
+.navb a{
+  color: white;
+}
+.search{
+  width: 400px;
+  height: 30px;
+  background-color: gray;
+  margin-left: 70px;
+  border-radius: 5px;
+  padding: 0px;
+}
+.search input{
+  width: 315px;
+  height: 30px;
+}
+.search button{
+  border: 0px;
+  border-radius: 5px;
+  height: inherit;
+  margin-top: 0px;
+  
+  margin-top: 0px;
+  background-color: gray;
+}
+.menu a{
+  text-decoration: none;
+}
+.menu a:hover{
+  background-color:#3d84b8 ;
+  color: white;
+}
+.navmenu li a:hover{
+  background-color:white ;
+  color: #3d84b8;
+}

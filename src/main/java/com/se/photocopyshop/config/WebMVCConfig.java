@@ -8,10 +8,15 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 public class WebMVCConfig implements WebMvcConfigurer {
     @Override
     public void addViewControllers(ViewControllerRegistry registry) {
-        registry.addViewController("/home").setViewName("home");
-        registry.addViewController("/").setViewName("home");
-        registry.addViewController("/hello").setViewName("hello");
+        registry.addViewController("/home/admin").setViewName("index");
+        registry.addViewController("/home/item/detail").setViewName("Item_detail");
+        registry.addViewController("/shopping-cart").setViewName("shoppingcart");
+        registry.addViewController("/user").setViewName("profile");
+        registry.addViewController("/").setViewName("index-user");
+        registry.addViewController("/sanpham").setViewName("tables");
         registry.addViewController("/login").setViewName("login");
+        registry.addViewController("/home").setViewName("index-user");
+        registry.addViewController("/khachhang").setViewName("taikhoan-khachhang");
         WebMvcConfigurer.super.addViewControllers(registry);
     }
 }
