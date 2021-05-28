@@ -1,16 +1,15 @@
 <!doctype html>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org"
-      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
- <head>
-     <meta charset='utf-8'>
-     <meta name='viewport' content='width=device-width, initial-scale=1'>
-     <title>Snippet - BBBootstrap</title>
-     <link th:rel="stylesheet" th:href="@{/webjars/bootstrap/4.0.0-2/css/bootstrap.min.css} "/>
-     <link th:href='@{https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css}' rel='stylesheet'>
-     <link th:href="@{/static/assets/css/shoppingcart.css}" rel="stylesheet">
-     <script type='text/javascript' th:src='@{https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js}'></script>
-     <script type='text/javascript' th:src='@{https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js}'></script>
-     <script type='text/javascript'>$(document).ready(function(){
+                        <html>
+                            <head>
+                                <meta charset='utf-8'>
+                                <meta name='viewport' content='width=device-width, initial-scale=1'>
+                                <title>Snippet - BBBootstrap</title>
+                                <link href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' rel='stylesheet'>
+                                <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css' rel='stylesheet'>
+                                <link href="css/shoppingcart.css" rel="stylesheet">
+                                <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+                                <script type='text/javascript' src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js'></script>
+                                <script type='text/javascript'>$(document).ready(function(){
   
 $('.radio-group .radio').click(function(){
 $('.radio').addClass('gray');
@@ -32,7 +31,7 @@ $(this).parent().prev().html(Number(count) - 1);
                             <body oncontextmenu='return false' class='snippet-body'>
                                 <nav class="navb navbar navbar-expand-lg fixed-top" >
                                     <div class="container">
-                                      <a class="navbar-brand" href="index.html">Start Bootstrap</a>
+                                      <a class="navbar-brand" href="indexUser.html">Start Bootstrap</a>
                                       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                                         <span class="navbar-toggler-icon"></span>
                                       </button>
@@ -45,16 +44,17 @@ $(this).parent().prev().html(Number(count) - 1);
                                       <div class="collapse navbar-collapse" id="navbarResponsive">
                                         <ul class="navmenu navbar-nav ml-auto">
                                             <li class="nav-item active">
-                                                <a class="nav-link" href="index.html"><img src="images/home.png" alt="">Home
+                                                <a class="nav-link" href="indexUser.html"><img src="images/home.png" alt="">Home
                                                   <span class="sr-only">(current)</span>
                                                 </a>
                                               </li>
                                            
-                                              <li class="nav-item">
-                                                <a class="nav-link" href="#"><img src="images/customer.png" alt="">Services</a>
-                                              </li>
+                                             
                                           <li class="nav-item">
                                             <a class="nav-link" href="shoppingcart.html"><img src="images/shopping-cart.png" alt="">   Giỏ hàng</a>
+                                          </li>
+                                          <li class="nav-item">
+                                            <a class="nav-link" href="profile.html"><img src="images/shopping-cart.png" alt="">Thông tin</a>
                                           </li>
                                           <li class="nav-item">
                                             <a class="nav-link" href="login.html"><img src="images/enter.png" alt="">  Đăng nhập</a>
@@ -154,11 +154,13 @@ $(this).parent().prev().html(Number(count) - 1);
                             <p class="my-auto">PayPal</p>
                             
                         </div>
-                        <div class="row d-flex px-3 radio gray mb-3"> 
-                            <input name="thanhtoan" type="radio" value="nhanhang" />Thanh toán khi nhận hàng
+                        <div class="row d-flex px-3 radio gray mb-3"> <img class="pay" src="https://i.imgur.com/cMk1MtK.jpg">
+                            <p class="my-auto">Tien mat </p>
+                            
                         </div>
-               
+                       
                     </div>
+                 
                     <div class="col-lg-5">
                         <div class="row px-2">
                             <div class="form-group col-md-6"> <label class="form-control-label">Name on Card</label> <input type="text" id="cname" name="cname" placeholder="Johnny Doe"> </div>

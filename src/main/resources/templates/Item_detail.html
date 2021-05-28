@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org"
-      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<html lang="en">
+
 <head>
 
   <meta charset="utf-8">
@@ -11,10 +11,11 @@
   <title>Shop Item - Start Bootstrap Template</title>
 
   <!-- Bootstrap core CSS -->
-  <link th:rel="stylesheet" th:href="@{/webjars/bootstrap/4.0.0-2/css/bootstrap.min.css} "/>
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
-  <link  th:href="@{/static/css/shop-item.css}" rel="stylesheet">
+  <link href="css/shop-item.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -35,17 +36,16 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navmenu navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="index.html"><img src="images/home.png" alt="">Home
+            <a class="nav-link" href="indexUser.html"><img src="images/home.png" alt="">Home
               <span class="sr-only">(current)</span>
             </a>
-          </li>
-       
-          <li class="nav-item">
-            <a class="nav-link" href="#"><img src="images/customer.png" alt="">Services</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="shoppingcart.html"><img src="images/shopping-cart.png" alt="">   Giỏ hàng</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="profile.html"><img src="images/shopping-cart.png" alt="">Thông tin</a>
+            </li>
           <li class="nav-item">
             <a class="nav-link" href="login.html"><img src="images/enter.png" alt="">  Đăng nhập</a>
           </li>
