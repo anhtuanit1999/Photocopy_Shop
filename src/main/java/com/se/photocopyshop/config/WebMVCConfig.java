@@ -1,6 +1,7 @@
 package com.se.photocopyshop.config;
 
 import org.springframework.context.annotation.Configuration;
+import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
@@ -8,15 +9,19 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 public class WebMVCConfig implements WebMvcConfigurer {
     @Override
     public void addViewControllers(ViewControllerRegistry registry) {
-        registry.addViewController("/home/admin").setViewName("index");
-        registry.addViewController("/home/item/detail").setViewName("Item_detail");
-        registry.addViewController("/shopping-cart").setViewName("shoppingcart");
-        registry.addViewController("/user").setViewName("profile");
-        registry.addViewController("/").setViewName("index-user");
-        registry.addViewController("/sanpham").setViewName("tables");
+        // home
+        registry.addViewController("/home").setViewName("home");
+        registry.addViewController("/").setViewName("/user-page/index");
+
+        // login
+        registry.addViewController("/hello").setViewName("hello");
         registry.addViewController("/login").setViewName("login");
-        registry.addViewController("/home").setViewName("index-user");
-        registry.addViewController("/khachhang").setViewName("taikhoan-khachhang");
         WebMvcConfigurer.super.addViewControllers(registry);
+    }
+
+    @Override
+    public void addResourceHandlers(ResourceHandlerRegistry registry) {
+        registry.addResourceHandler("/resources/**").addResourceLocations("/resources/");
+        WebMvcConfigurer.super.addResourceHandlers(registry);
     }
 }
