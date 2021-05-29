@@ -3,14 +3,18 @@ USE [photocopy_shop]
 /* create table users */
 CREATE TABLE users (
     id int IDENTITY(1,1) PRIMARY KEY,
-    email varchar(255) NOT NULL,
-	pwd varchar(255)
+    email varchar(255) NOT NULL, /* Email làm tài khoản đăng nhập */
+	pwd varchar(255), /* Password lưu trữ khi đã mã hóa, không thể dùng từ khóa password */
+	full_name varchar(100), /* Tên đầu đủ của người dùng */
+	addr varchar(100), /* Địa chỉ của người dùng, không thể dùng từ khóa address */
+	phone varchar(10), /* số điện thoại của người dùng */
+	role varchar(10), /* Role: quyền hạn của người dùng (customer, admin) */
 );
 
 /* create table users */
 CREATE TABLE product_category (
 	id int IDENTITY(1,1) PRIMARY KEY,
-    name varchar(255) NOT NULL, /* Danh mục sản phẩm: Photocopy, fax */
+    name varchar(255) NOT NULL, /* Danh mục sản phẩm: Photocopy, fax, in đen trắng, in màu, scan */
 );
 
 /* create table users */
@@ -35,3 +39,18 @@ CREATE TABLE photocopy_machine (
 	update_at datetime, /* Ngày cập nhật */
 	update_by int foreign key references users(id), /* Người cập nhật */
 );
+
+/* create table cart */
+CREATE TABLE cart (
+	id int IDENTITY(1,1) PRIMARY KEY,
+    customer_id int NOT NULL foreign key references users(id) /* Khác hàng sở hữu giỏ hàng */
+);
+
+/* create table cart detail */
+CREATE TABLE cart_detail (
+	cart_id int NOT NULL foreign key references cart(id),
+    photocopy_machine_id int NOT NULL foreign key references photocopy_machine(id), /* Sản phẩnm */
+	quantity int /* Số lượng sản phẩm */
+);
+
+/* Nếu xóa csdl thì xóa theo thứ tự: cart_detail -> cart -> photocopy_machine -> pruduct_category -> users */
