@@ -1,3 +1,4 @@
+<%@ page language="java" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -227,7 +228,7 @@
 							</li>
 
 							<li class="">
-								<a href="taikhoan-khachhang.html">
+								<a href="/taikhoan-khachhang">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Tài khoản &amp; Khách hàng
 								</a>

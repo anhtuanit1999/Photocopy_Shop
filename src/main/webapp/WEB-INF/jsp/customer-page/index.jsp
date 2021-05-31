@@ -1,3 +1,4 @@
+<%@ page language="java" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -38,19 +39,19 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navmenu navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="index.html"><img src="images/home.png" alt="">Home
+                    <a class="nav-link" href="index.html"><img src="/WEB-INF/images/home.png" alt="">Home
                         <span class="sr-only">(current)</span>
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><img src="images/customer.png" alt="">Services</a>
+                    <a class="nav-link" href="#"><img src="/WEB-INF/images/customer.png" alt="">Services</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="shoppingcart.html"><img src="images/shopping-cart.png" alt="">   Giỏ hàng</a>
+                    <a class="nav-link" href="shoppingcart.html"><img src="/WEB-INF/images/shopping-cart.png" alt="">Giỏ hàng</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="login.html"><img src="images/enter.png" alt="">  Đăng nhập</a>
+                    <a class="nav-link" href="login.html"><img src="/WEB-INF/images/enter.png" alt="">Đăng nhập</a>
 
                 </li>
             </ul>

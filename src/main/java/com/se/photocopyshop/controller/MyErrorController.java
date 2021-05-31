@@ -11,4 +11,10 @@ public class MyErrorController implements ErrorController {
         //do something like logging
         return "error";
     }
+
+    @RequestMapping("/login")
+    public String login() {
+        //do something like logging
+        return "login";
+    }
 }
