@@ -61,16 +61,16 @@ CREATE TABLE cart_detail (
 
 /* Nếu xóa csdl thì xóa theo thứ tự: cart_detail -> cart -> photocopy_machine -> pruduct_category -> users */
 select * from users
-insert into users values('nguyen@gmail.com','301220',N'Lê Thị Nguyên',N'TpHCM','0867655232','admin')
-insert into users values('thinh@gmail.com','111111',N'Nguyễn Phúc Thịnh',N'Bình Định','0841527352','admin')
-insert into users values('anhtuan@gmail.com','222222',N'Phạm Anh Tuấn',N'Bình Dương','0514257362','admin')
-insert into users values('haanh@gmail.com','333333',N'Lê Hà Anh',N'Nghệ An','0123756745','customer')
-insert into users values('vietanh@gmail.com','444444',N'Hoàng Việt Anh',N'Hà Nội','0853375537','customer')
-insert into users values('ha@gmail.com','555555',N'Nguyễn Thanh Hà',N'Hà Tĩnh','0326345267','customer')
-insert into users values('hang@gmail.com','333222',N'Phan Thu Hằng',N'Cà Mau','0875434566','customer')
-insert into users values('tu@gmail.com','121212',N'Nguyễn Hữu Tú',N'Nam Định','0865445677','customer')
-insert into users values('haianh@gmail.com','131313',N'Hoàng Hải Anh',N'Thái Bình','0875355244','customer')
-insert into users values('mai@gmail.com','171717',N'Hoàng Mai',N'Thanh Hoá','0753565456','customer')
+insert into users values('nguyen@gmail.com','$2y$12$N6w08wS6XlrqrZmOtv/mHeQ8P52TR23seB15sZGZumGEdfs4.kD8K',N'Lê Thị Nguyên',N'TpHCM','0867655232','admin')
+insert into users values('thinh@gmail.com','$2y$12$N6w08wS6XlrqrZmOtv/mHeQ8P52TR23seB15sZGZumGEdfs4.kD8K',N'Nguyễn Phúc Thịnh',N'Bình Định','0841527352','admin')
+insert into users values('anhtuan@gmail.com','$2y$12$N6w08wS6XlrqrZmOtv/mHeQ8P52TR23seB15sZGZumGEdfs4.kD8K',N'Phạm Anh Tuấn',N'Bình Dương','0514257362','admin')
+insert into users values('haanh@gmail.com','$2y$12$N6w08wS6XlrqrZmOtv/mHeQ8P52TR23seB15sZGZumGEdfs4.kD8K',N'Lê Hà Anh',N'Nghệ An','0123756745','customer')
+insert into users values('vietanh@gmail.com','$2y$12$N6w08wS6XlrqrZmOtv/mHeQ8P52TR23seB15sZGZumGEdfs4.kD8K',N'Hoàng Việt Anh',N'Hà Nội','0853375537','customer')
+insert into users values('ha@gmail.com','$2y$12$N6w08wS6XlrqrZmOtv/mHeQ8P52TR23seB15sZGZumGEdfs4.kD8K',N'Nguyễn Thanh Hà',N'Hà Tĩnh','0326345267','customer')
+insert into users values('hang@gmail.com','$2y$12$N6w08wS6XlrqrZmOtv/mHeQ8P52TR23seB15sZGZumGEdfs4.kD8K',N'Phan Thu Hằng',N'Cà Mau','0875434566','customer')
+insert into users values('tu@gmail.com','$2y$12$N6w08wS6XlrqrZmOtv/mHeQ8P52TR23seB15sZGZumGEdfs4.kD8K',N'Nguyễn Hữu Tú',N'Nam Định','0865445677','customer')
+insert into users values('haianh@gmail.com','$2y$12$N6w08wS6XlrqrZmOtv/mHeQ8P52TR23seB15sZGZumGEdfs4.kD8K',N'Hoàng Hải Anh',N'Thái Bình','0875355244','customer')
+insert into users values('mai@gmail.com','$2y$12$N6w08wS6XlrqrZmOtv/mHeQ8P52TR23seB15sZGZumGEdfs4.kD8K',N'Hoàng Mai',N'Thanh Hoá','0753565456','customer')
 
 
 select * from product_category
