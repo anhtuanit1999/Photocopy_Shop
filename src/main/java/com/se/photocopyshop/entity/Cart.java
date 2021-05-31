@@ -1,39 +1,27 @@
 package com.se.photocopyshop.entity;
 
 
-import org.apache.xpath.operations.String;
-
 import javax.persistence.*;
 import java.util.List;
 
 @Entity
-@Table(name="User")
-
+@Table(name="cart")
 public class Cart {
     @Id
+    @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    int id;
+    private int id;
 
-    @Column(name = "nameSP")
-    private String nameSP;
+    @OneToOne
+    @JoinColumn(name = "customer_id", nullable = false)
+    private User customerId;
 
-    @Column(name = "discount")
-    private double discount;
-
-    @OneToMany(mappedBy = "cart", fetch = FetchType.EAGER)
-    java.util.List<CartDetail> cartDetail;
-
-    @OneToMany(mappedBy = "cart", fetch = FetchType.EAGER)
-    List<PhotoMachine> photoMachines;
     public Cart() {
     }
 
-    public List<PhotoMachine> getPhotoMachines() {
-        return photoMachines;
-    }
-
-    public void setPhotoMachines(List<PhotoMachine> photoMachines) {
-        this.photoMachines = photoMachines;
+    public Cart(int id, User customerId) {
+        this.id = id;
+        this.customerId = customerId;
     }
 
     public int getId() {
@@ -44,38 +32,19 @@ public class Cart {
         this.id = id;
     }
 
-    public String getNameSP() {
-        return nameSP;
+    public User getCustomerId() {
+        return customerId;
     }
 
-    public void setNameSP(String nameSP) {
-        this.nameSP = nameSP;
-    }
-
-    public double getDiscount() {
-        return discount;
-    }
-
-    public void setDiscount(double discount) {
-        this.discount = discount;
-    }
-
-    public List<CartDetail> getCartDetail() {
-        return cartDetail;
-    }
-
-    public void setCartDetail(List<CartDetail> cartDetail) {
-        this.cartDetail = cartDetail;
+    public void setCustomerId(User customerId) {
+        this.customerId = customerId;
     }
 
     @Override
-    public java.lang.String toString() {
+    public String toString() {
         return "Cart{" +
                 "id=" + id +
-                ", nameSP=" + nameSP +
-                ", discount=" + discount +
-                ", cartDetail=" + cartDetail +
-                ", photoMachines=" + photoMachines +
+                ", customerId=" + customerId +
                 '}';
     }
 }

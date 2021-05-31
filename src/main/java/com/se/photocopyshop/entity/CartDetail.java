@@ -1,83 +1,78 @@
 package com.se.photocopyshop.entity;
 
 
-import org.apache.xpath.operations.String;
-
 import javax.persistence.*;
 import java.util.List;
 
 @Entity
-@Table(name = "CartDetail")
+@Table(name = "cart_detail")
 public class CartDetail {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    int id;
-
-    @Column(name = "number")
-    private double number;
-
-    @Column(name = "date")
-    private String date;
-
-    @OneToMany(mappedBy = "cartDetail", fetch = FetchType.EAGER)
-    java.util.List<PhotoMachine> photoMachine;
+    @EmbeddedId
+    private CarDetailKey id;
 
     @ManyToOne
-    @JoinColumn(name = "cartId")
-    Cart cart;
+    @MapsId("cartId")
+    @JoinColumn(name = "cart_id")
+    private Cart cartId;
+
+    @ManyToOne
+    @MapsId("photocopyMachineId")
+    @JoinColumn(name = "photocopy_machine_id")
+    private PhotoMachine photocopyMachineId;
+
+    @Column(name = "quantity")
+    private int quantity;
 
     public CartDetail() {
     }
 
-    public int getId() {
+    public CartDetail(CarDetailKey id, Cart cartId, PhotoMachine photocopyMachineId, int quantity) {
+        this.id = id;
+        this.cartId = cartId;
+        this.photocopyMachineId = photocopyMachineId;
+        this.quantity = quantity;
+    }
+
+    public CarDetailKey getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(CarDetailKey id) {
         this.id = id;
     }
 
-    public double getNumber() {
-        return number;
+    public Cart getCartId() {
+        return cartId;
     }
 
-    public void setNumber(double number) {
-        this.number = number;
+    public void setCartId(Cart cartId) {
+        this.cartId = cartId;
     }
 
-    public String getDate() {
-        return date;
+    public PhotoMachine getPhotocopyMachineId() {
+        return photocopyMachineId;
     }
 
-    public void setDate(String date) {
-        this.date = date;
+    public void setPhotocopyMachineId(PhotoMachine photocopyMachineId) {
+        this.photocopyMachineId = photocopyMachineId;
     }
 
-    public List<PhotoMachine> getPhotoMachine() {
-        return photoMachine;
+    public int getQuantity() {
+        return quantity;
     }
 
-    public void setPhotoMachine(List<PhotoMachine> photoMachine) {
-        this.photoMachine = photoMachine;
-    }
-
-    public Cart getCart() {
-        return cart;
-    }
-
-    public void setCart(Cart cart) {
-        this.cart = cart;
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
     }
 
     @Override
-    public java.lang.String toString() {
+    public String toString() {
         return "CartDetail{" +
                 "id=" + id +
-                ", number=" + number +
-                ", date=" + date +
-                ", photoMachine=" + photoMachine +
-                ", cart=" + cart +
+                ", cartId=" + cartId +
+                ", photocopyMachineId=" + photocopyMachineId +
+                ", quantity=" + quantity +
                 '}';
     }
 }

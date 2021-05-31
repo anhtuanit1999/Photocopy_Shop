@@ -1,5 +1,10 @@
 CREATE DATABASE [photocopy_shop]
 USE [photocopy_shop]
+/* create table test dùng để test */
+CREATE TABLE test (
+   id int IDENTITY(1,1) PRIMARY KEY,
+   name nvarchar(255) NOT NULL, /* Email làm tài khoản đăng nhập */
+);
 /* create table users */
 CREATE TABLE users (
    id int IDENTITY(1,1) PRIMARY KEY,
@@ -24,7 +29,7 @@ CREATE TABLE photocopy_machine (
    machine_type nvarchar(255), /* Loại máy: Photocopy đen trắng */
    machine_feature nvarchar(255), /* Chức năng: Copy + In mạng + Scan màu + Duplex + ARDF */
    paper_tray nvarchar(255),/* Khay giấy: 01 x 550 tờ, khay tay 100 tờ */
-   paper_sizer nvarchar(255), /* Khổ giấy: A3/A4 */
+   paper_size nvarchar(255), /* Khổ giấy: A3/A4 */
    print_speed nvarchar(255), /* Tốc độ in: 25 trang/phút */
    is_reverse_the_clone bit, /* Đảo mặt bản sao: Có */
    has_ARDF bit, /* Bộ nạp và đảo bản gốc tự động (ARDF): Có sẵn */
@@ -38,8 +43,8 @@ CREATE TABLE photocopy_machine (
    create_by int NOT NULL foreign key references users(id), /* Người tạo */
    update_at datetime, /* Ngày cập nhật */
    update_by int foreign key references users(id), /* Người cập nhật */
-   price double
-);
+   price float
+   );
 
 /* create table cart */
 CREATE TABLE cart (
@@ -121,7 +126,7 @@ N'n – Copy – Scan – Fax – Duplex – LAN – WiFi',
 N'01 x 250 tờ, khay tay 100 tờ',N'Tối đa A4',N'30 trang/phút',1,1,N'USB/ LAN/ WiFi',N'Ricoh SP310LS (2.000 trang)',N'12 tháng tại nơi sử dụng',
 N'100% mới, nguyên tem, nguyên hộp, CO/CQ',2,N'2021-02-14 22:02:01',2,'2021-02-19 22:02:01',2,5900000)
 
-insert into photocopy_machine values(N'Máy in laser màu đa năng Ricoh SP C250SF',
+insert into photocopy_machine values(N'Máy in laser màu đa năng Ricoh SP C250SF',N'Máy in laser đen trắng đa chức năng Ricoh',
 N' In – Copy – Scan – Fax – Duplex – WiFi',
 N'01 x 250 tờ, khay tay 100 tờ',N'Tối đa A4',N'20 trang/phút',1,0,N'USB/ LAN/ WiFi',N' Ricoh 250S B/ C/ M/ Y (5.000 trang)',N'Chính hãng',
 N'100% mới, nguyên tem, nguyên hộp, CO/CQ',2,N'2021-02-14 22:02:01',2,'2021-02-19 22:02:01',2,11000000)
@@ -312,7 +317,7 @@ N'Scan',N'01 x 250 tờ, khay tay 100 tờ',N'Tối đa 216 x 310 mm',
 N'35 trang/phút, 70 ảnh/phút',1,1,N'USB 2.0/ USB 3.0',N'',N'12 tháng tại nơi sử dụng',
 N'100% mới, nguyên tem, nguyên hộp, CO/CQ',4,N'2021-02-14 22:02:01',2,'2021-02-19 22:02:01',2,8300000)
 
-insert into photocopy_machine (machine_name,machine_type,machine_feature,paper_tray,paper_sizer,print_speed,is_reverse_the_clone,has_ARDF,communication_gate,ink,guarantee,machine_status,category_id,create_at,create_by,update_at,update_by,price) values
+insert into photocopy_machine (machine_name,machine_type,machine_feature,paper_tray,paper_size,print_speed,is_reverse_the_clone,has_ARDF,communication_gate,ink,guarantee,machine_status,category_id,create_at,create_by,update_at,update_by,price) values
 (N'Máy photocopy Canon iR2004',N'Máy photocopy đen trắng Canon',N'Copy – In – Scan màu',N'01 x 250 tờ, khay tay 100 tờ',N'A3/A4','20 trang/phút',0,0,'USB',N'Canon NPG-59 (10.000 trang)',N'12 tháng hoặc 40.000 bản in',N'100% mới, nguyên tem, nguyên hộp, CO/CQ',1,'2021-02-14 22:02:01',1,'2021-02-19 22:02:01',1,3212312),
 (N'Máy Photocopy Canon iR2535',N'Máy photocopy đen trắng Canon',N'Copy – In – Scan màu – Duplex – DADF – LAN',N'Không',N'A3/A4','35 trang/phút',1,1,'USB/ LAN',N'Canon NPG-51 (14.600 trang)',N'12 tháng hoặc 50.000 bản in',N'100% mới, nguyên tem, nguyên hộp, CO/CQ',1,'2021-02-14 22:02:01',1,'2021-02-19 22:02:01',1,2789999),
 (N'Máy photocopy Canon iR2545W',N'Máy photocopy đen trắng Canon',N'Copy – In – Scan màu – Duplex – DADF – LAN',N'Không',N'A3/A4','45 trang/phút',1,1,'USB/ LAN',N'Canon NPG-51 (14.600 trang)',N'12 tháng hoặc 50.000 bản in',N'100% mới, nguyên tem, nguyên hộp, CO/CQ',1,'2021-02-14 22:02:01',1,'2021-02-19 22:02:01',1,30984993),
