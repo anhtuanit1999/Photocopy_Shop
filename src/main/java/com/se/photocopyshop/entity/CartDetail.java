@@ -1,10 +1,12 @@
 package com.se.photocopyshop.entity;
 
 
+import lombok.Builder;
+
 import javax.persistence.*;
-import java.util.List;
 
 @Entity
+@Builder
 @Table(name = "cart_detail")
 public class CartDetail {
 

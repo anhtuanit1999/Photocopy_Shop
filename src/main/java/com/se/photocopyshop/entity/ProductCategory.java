@@ -1,10 +1,6 @@
 package com.se.photocopyshop.entity;
 
-
-import org.apache.xpath.operations.String;
-
 import javax.persistence.*;
-import java.util.List;
 
 @Entity
 @Table(name="product_category")

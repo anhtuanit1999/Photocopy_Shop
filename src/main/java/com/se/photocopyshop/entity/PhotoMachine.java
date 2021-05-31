@@ -1,12 +1,12 @@
 package com.se.photocopyshop.entity;
 
-import org.apache.xpath.operations.String;
+import lombok.Builder;
 
 import javax.persistence.*;
 import java.sql.Date;
-import java.util.List;
 
 @Entity
+@Builder
 @Table(name="photocopy_machine")
 public class PhotoMachine {
     @Id
@@ -69,15 +69,12 @@ public class PhotoMachine {
     private User updateBy;
 
     @Column(name = "price")
-    private double price;
+    private float price;
 
     public PhotoMachine() {
     }
 
-    public PhotoMachine(int id, String machineName, String machineType, String machineFeature, String paperTray,
-                        String paperSize, String printSpeed, boolean isReverse, boolean hasARDF, String communicationGate,
-                        String ink, String guarantee, String machineStatus, ProductCategory categoryId, Date createAt,
-                        User createBy, Date updateAt, User updateBy, double price) {
+    public PhotoMachine(int id, String machineName, String machineType, String machineFeature, String paperTray, String paperSize, String printSpeed, boolean isReverse, boolean hasARDF, String communicationGate, String ink, String guarantee, String machineStatus, ProductCategory categoryId, Date createAt, User createBy, Date updateAt, User updateBy, float price) {
         this.id = id;
         this.machineName = machineName;
         this.machineType = machineType;
@@ -243,36 +240,11 @@ public class PhotoMachine {
         this.updateBy = updateBy;
     }
 
-    public double getPrice() {
+    public float getPrice() {
         return price;
     }
 
-    public void setPrice(double price) {
+    public void setPrice(float price) {
         this.price = price;
-    }
-
-    @Override
-    public java.lang.String toString() {
-        return "PhotoMachine{" +
-                "id=" + id +
-                ", machineName=" + machineName +
-                ", machineType=" + machineType +
-                ", machineFeature=" + machineFeature +
-                ", paperTray=" + paperTray +
-                ", paperSize=" + paperSize +
-                ", printSpeed=" + printSpeed +
-                ", isReverse=" + isReverse +
-                ", hasARDF=" + hasARDF +
-                ", communicationGate=" + communicationGate +
-                ", ink=" + ink +
-                ", guarantee=" + guarantee +
-                ", machineStatus=" + machineStatus +
-                ", categoryId=" + categoryId +
-                ", createAt=" + createAt +
-                ", createBy=" + createBy +
-                ", updateAt=" + updateAt +
-                ", updateBy=" + updateBy +
-                ", price=" + price +
-                '}';
     }
 }
