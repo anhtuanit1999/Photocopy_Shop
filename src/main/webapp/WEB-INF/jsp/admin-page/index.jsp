@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org"
-	  xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<html lang="en">
 	<head>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 		<meta charset="utf-8" />
@@ -10,23 +9,38 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 
 		<!-- bootstrap & fontawesome -->
-		<link rel="stylesheet" th:href="@{/assets/css/bootstrap.min.css}" />
-		<link rel="stylesheet"  th:href="@{/assets/font-awesome/4.5.0/css/font-awesome.min.css}" />
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="assets/font-awesome/4.5.0/css/font-awesome.min.css" />
 
 		<!-- page specific plugin styles -->
 
 		<!-- text fonts -->
-		<link rel="stylesheet"  th:href="@{/assets/css/fonts.googleapis.com.css}" />
+		<link rel="stylesheet" href="assets/css/fonts.googleapis.com.css" />
 
 		<!-- ace styles -->
-		<link rel="stylesheet"  th:href="@{/assets/css/ace.min.css}"class="ace-main-stylesheet" id="main-ace-style" />
-		<link rel="stylesheet" th:href="@{/assets/css/ace-skins.min.css}" />
-		<link rel="stylesheet"  th:href="@{/assets/css/ace-rtl.min.css}" />
+		<link rel="stylesheet" href="assets/css/ace.min.css" class="ace-main-stylesheet" id="main-ace-style" />
 
+		<!--[if lte IE 9]>
+			<link rel="stylesheet" href="assets/css/ace-part2.min.css" class="ace-main-stylesheet" />
+		<![endif]-->
+		<link rel="stylesheet" href="assets/css/ace-skins.min.css" />
+		<link rel="stylesheet" href="assets/css/ace-rtl.min.css" />
 
-		<script th:src="@{/assets/js/ace-extra.min.js}"></script>
+		<!--[if lte IE 9]>
+		  <link rel="stylesheet" href="assets/css/ace-ie.min.css" />
+		<![endif]-->
 
-	
+		<!-- inline styles related to this page -->
+
+		<!-- ace settings handler -->
+		<script src="assets/js/ace-extra.min.js"></script>
+
+		<!-- HTML5shiv and Respond.js for IE8 to support HTML5 elements and media queries -->
+
+		<!--[if lte IE 8]>
+		<script src="assets/js/html5shiv.min.js"></script>
+		<script src="assets/js/respond.min.js"></script>
+		<![endif]-->
 	</head>
 
 	<body class="no-skin">
@@ -43,7 +57,7 @@
 				</button>
 
 				<div class="navbar-header pull-left">
-					<a th:href="@{/home/admin}" class="navbar-brand">
+					<a href="profile.html" class="navbar-brand">
 						<small>
 							<i class="fa fa-leaf"></i>
 							Ace Admin
@@ -145,7 +159,7 @@
 								</li>
 
 								<li>
-									<a th:href="@{/profile}">
+									<a href="profile.html">
 										<i class="ace-icon fa fa-user"></i>
 										Profile
 									</a>
@@ -183,7 +197,7 @@
 
 				<ul class="nav nav-list">
 					<li class="active">
-						<a th:href="@{/hone/admin}">
+						<a href="index.jsp">
 							<i class="menu-icon fa fa-tachometer"></i>
 							<span class="menu-text"> Dashboard </span>
 						</a>
@@ -204,7 +218,7 @@
 
 						<ul class="submenu">
 							<li class="">
-								<a th:href="@{/sanpham}">
+								<a href="tables.html">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Nhà sản xuất &amp; Sản phẩm
 								</a>
@@ -213,7 +227,7 @@
 							</li>
 
 							<li class="">
-								<a th:href="@{/taikhoan}">
+								<a href="taikhoan-khachhang.html">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Tài khoản &amp; Khách hàng
 								</a>
@@ -240,7 +254,7 @@
 
 						<ul class="submenu">
 							<li class="">
-								<a th:href="@{/profile}">
+								<a href="profile.html">
 									<i class="menu-icon fa fa-caret-right"></i>
 									User Profile
 								</a>
@@ -250,7 +264,7 @@
 
 							
 							<li class="">
-								<a th:href="@{/login}">
+								<a href="login.html">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Login &amp; Register
 								</a>
@@ -279,7 +293,7 @@
 							
 
 							<li class="">
-								<a th:href="@{/error404}">
+								<a href="error-404.html">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Error 404
 								</a>
@@ -288,7 +302,7 @@
 							</li>
 
 							<li class="">
-								<a th:href="@{/error500}">
+								<a href="error-500.html">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Error 500
 								</a>
@@ -311,14 +325,9 @@
 						<ul class="breadcrumb">
 							<li>
 								<i class="ace-icon fa fa-home home-icon"></i>
-								<a th:href="@{/home/admin}">Home</a>
+								<a href="#">Home</a>
 							</li>
 							<li class="active">Dashboard</li>
-							<li>
-								<a th:href="@{/sanpham}">Tables</a>
-
-							</li>
-							<li class="active">Nhà sản xuất  &amp; Sản phẩm </li>
 						</ul><!-- /.breadcrumb -->
 
 						<div class="nav-search" id="nav-search">
@@ -1565,26 +1574,37 @@
 			</a>
 		</div><!-- /.main-container -->
 
-		<script th:src="@{/assets/js/jquery-2.1.4.min.js}"></script>
+		<!-- basic scripts -->
 
+		<!--[if !IE]> -->
+		<script src="assets/js/jquery-2.1.4.min.js"></script>
 
+		<!-- <![endif]-->
+
+		<!--[if IE]>
+<script src="assets/js/jquery-1.11.3.min.js"></script>
+<![endif]-->
 		<script type="text/javascript">
 			if('ontouchstart' in document.documentElement) document.write("<script src='assets/js/jquery.mobile.custom.min.js'>"+"<"+"/script>");
 		</script>
-		<script th:src="@{/assets/js/bootstrap.min.js}"></script>
+		<script src="assets/js/bootstrap.min.js"></script>
 
+		<!-- page specific plugin scripts -->
 
-		<script th:src="@{/assets/js/jquery-ui.custom.min.js}"></script>
-		<script th:src="@{/assets/js/jquery.ui.touch-punch.min.js}"></script>
-		<script th:src="@{/assets/js/jquery.easypiechart.min.js}"></script>
-		<script th:src="@{/assets/js/jquery.sparkline.index.min.js}"></script>
-		<script th:src="@{/assets/js/jquery.flot.min.js}"></script>
-		<script th:src="@{/assets/js/jquery.flot.pie.min.js}"></script>
-		<script th:src="@{/assets/js/jquery.flot.resize.min.js}"></script>
+		<!--[if lte IE 8]>
+		  <script src="assets/js/excanvas.min.js"></script>
+		<![endif]-->
+		<script src="assets/js/jquery-ui.custom.min.js"></script>
+		<script src="assets/js/jquery.ui.touch-punch.min.js"></script>
+		<script src="assets/js/jquery.easypiechart.min.js"></script>
+		<script src="assets/js/jquery.sparkline.index.min.js"></script>
+		<script src="assets/js/jquery.flot.min.js"></script>
+		<script src="assets/js/jquery.flot.pie.min.js"></script>
+		<script src="assets/js/jquery.flot.resize.min.js"></script>
 
 		<!-- ace scripts -->
-		<script th:src="@{/assets/js/ace-elements.min.js}"></script>
-		<script th:src="@{/assets/js/ace.min.js}"></script>
+		<script src="assets/js/ace-elements.min.js"></script>
+		<script src="assets/js/ace.min.js"></script>
 
 		<!-- inline scripts related to this page -->
 		<script type="text/javascript">
@@ -1621,7 +1641,7 @@
 			  //flot chart resize plugin, somehow manipulates default browser resize event to optimize it!
 			  //but sometimes it brings up errors with normal resize event handlers
 			  $.resize.throttleWindow = false;
-
+			
 			  var placeholder = $('#piechart-placeholder').css({'width':'90%' , 'min-height':'150px'});
 			  var data = [
 				{ label: "social networks",  data: 38.7, color: "#68BC31"},

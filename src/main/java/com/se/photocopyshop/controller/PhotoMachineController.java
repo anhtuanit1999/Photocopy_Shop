@@ -2,9 +2,12 @@ package com.se.photocopyshop.controller;
 
 import com.se.photocopyshop.dao.PhotoMachineRepository;
 import com.se.photocopyshop.dao.ProductRepository;
+import com.se.photocopyshop.entity.PhotoMachine;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
@@ -37,5 +40,6 @@ public class PhotoMachineController {
         model.addAttribute("categoryMachines", categoryMachines);
         return "customer/item_detail";
     }
+
 
 }
