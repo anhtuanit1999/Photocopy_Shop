@@ -13,44 +13,41 @@
 	<!-- Navigation -->
 	<nav class="navb navbar navbar-expand-lg fixed-top" >
 		<div class="container">
-		  <a class="navbar-brand" href="indexUser.html">Start Bootstrap</a>
-		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		  </button>
-		  <div class="search">
-			<input type="text" placeholder="Tìm kiếm">
-			<button>
-			  Tìm kiếm
+			<a class="navbar-brand"th:href="@{/customer/index.html}">Start Bootstrap</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
 			</button>
-		  </div>
-		  <div class="collapse navbar-collapse" id="navbarResponsive">
-			<ul class="navmenu navbar-nav ml-auto">
-			  <li class="nav-item active">
-				<a class="nav-link" href="index.html"><img src="images/home.png" alt="">Home
-				  <span class="sr-only">(current)</span>
-				</a>
-			  </li>
-		   
-	
-			  <li class="nav-item">
-				<a class="nav-link" href="shoppingcart.html"><img src="images/shopping-cart.png" alt="">   Giỏ hàng</a>
-			  </li>
-			  
-			  <li class="nav-item">
-				<a class="nav-link" href="profile-cus.html"><img src="images/shopping-cart.png" alt="">Thông tin</a>
-			  </li>
-			  <li class="nav-item">
-				<a class="nav-link" href="login.html"><img src="images/enter.png" alt="">  Đăng nhập</a>
-				
-			  </li>
-			</ul>
-		  </div>
+			<div class="search">
+				<input type="text" placeholder="Tìm kiếm">
+				<button>
+					Tìm kiếm
+				</button>
+			</div>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navmenu navbar-nav ml-auto">
+					<li class="nav-item active">
+						<a class="nav-link" th:href="@{/home}"><img th:src="@{/assets/images/home.png}" alt="">Home
+							<span class="sr-only">(current)</span>
+						</a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link" th:href="@{/profile/customer}"><img th:src="@{/assets/images/customer.png}" alt="">Profile</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" th:href="@{/cart}"><img
+								th:src="@{/assets/images/shopping-cart.png}" alt="">  Giỏ hàng</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" th:href="@{/login}"><img th:src="@{/assets/images/enter.png}" alt="">  Đăng nhập</a>
+					</li>
+				</ul>
+			</div>
 		</div>
-	  </nav>
-	
-	 
-	
-<div class="container">
+	</nav>
+
+
+	<div class="container">
 <div class="row gutters">
 <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
 <div class="card h-100">
@@ -135,8 +132,8 @@
 		<div class="row gutters">
 			<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
 				<div class="text-right">
-					<button type="button" id="submit" name="submit" class="btn btn-secondary">Cancel</button>
-					<button type="button" id="submit" name="submit" class="btn btn-primary">Update</button>
+					<button type="button"  name="submit" class="btn btn-secondary">Cancel</button>
+					<button type="button"  name="submit" class="btn btn-primary">Update</button>
 				</div>
 			</div>
 		</div>

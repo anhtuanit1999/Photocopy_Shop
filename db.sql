@@ -167,154 +167,155 @@ N'100% mới, nguyên tem, nguyên hộp, CO/CQ',2,N'2021-02-14 22:02:01',2,'202
 insert into photocopy_machine values(N'Máy quét ADF tốc độ cao Canon DR-C225',N'Máy scan ADF',
 N'Scan',
 N'01 x 250 tờ, khay tay 100 tờ',N'Tối đa A4',N'25 trang/phút ; 50 hình/phút',1,1,N'USB 2.0',N'',N'12 tháng tại nơi sử dụng',
-N'100% mới, nguyên tem, nguyên hộp, CO/CQ',5,N'2021-02-14 22:02:01',2,'2021-02-19 22:02:01',2,18350000)
+N'100% mới, nguyên tem, nguyên hộp, CO/CQ',4,N'2021-02-14 22:02:01',2,'2021-02-19 22:02:01',2,18350000)
 
 insert into photocopy_machine values(N'Máy quét ADF tốc độ cao Canon DR-C225',N'Máy scan ADF',
 N'Scan',
 N'01 x 250 tờ, khay tay 100 tờ',N'Tối đa A4',N'25 trang/phút ; 50 hình/phút',1,1,N'USB 2.0',N'',N'12 tháng tại nơi sử dụng',
-N'100% mới, nguyên tem, nguyên hộp, CO/CQ',5,N'2021-02-14 22:02:01',2,'2021-02-19 22:02:01',2,10990000)
+N'100% mới, nguyên tem, nguyên hộp, CO/CQ',4,N'2021-02-14 22:02:01',2,'2021-02-19 22:02:01',2,10990000)
 
 insert into photocopy_machine values(N'Máy quét HP Digital Sender Flow 8500 fn1 (L2719A)',N'Máy scan ADF',
 N'Scan',
 N'01 x 250 tờ, khay tay 100 tờ',N'Tối đa A4',N'60 trang/phút, 120 hình ảnh/phút',1,1,N'USB/LAN',N'',N'Chính hãng',
-N'100% mới, nguyên tem, nguyên hộp, CO/CQ',5,N'2021-02-14 22:02:01',2,'2021-02-19 22:02:01',2,54400000)
+N'100% mới, nguyên tem, nguyên hộp, CO/CQ',4,N'2021-02-14 22:02:01',2,'2021-02-19 22:02:01',2,54400000)
 
 insert into photocopy_machine values(N'Máy quét HP Scanjet Enterprise Flow 5000 S2 (L2751A)',N'Máy scan ADF',
 N'Scan',
 N'01 x 250 tờ, khay tay 100 tờ',N'Tối đa A4',N'30 trang/phút, 60 hình ảnh/phút',1,1,N'USB 2.0',N'',N'Chính hãng',
-N'100% mới, nguyên tem, nguyên hộp, CO/CQ',5,N'2021-02-14 22:02:01',2,'2021-02-19 22:02:01',2,12500000)
+N'100% mới, nguyên tem, nguyên hộp, CO/CQ',4,N'2021-02-14 22:02:01',2,'2021-02-19 22:02:01',2,12500000)
 
 insert into photocopy_machine values(N'Máy quét HP Scanjet Enterprise Flow 7000 S2 (L2730B)',N'Máy scan ADF',
 N'Scan',
 N'01 x 250 tờ, khay tay 100 tờ',N'Tối đa 216 x 309 mm.',N'45 trang/phút, 90 ảnh/phút',1,1,N'USB 2.0',N'',N'Chính hãng',
-N'100% mới, nguyên tem, nguyên hộp, CO/CQ',5,N'2021-02-14 22:02:01',2,'2021-02-19 22:02:01',2,21000000)
+N'100% mới, nguyên tem, nguyên hộp, CO/CQ',4,N'2021-02-14 22:02:01',2,'2021-02-19 22:02:01',2,21000000)
 
 insert into photocopy_machine values(N'Máy quét HP Scanjet Enterprise Flow N9120',N'Máy scan ADF',
 N'Scan',
 N'01 x 250 tờ, khay tay 100 tờ',N'Tối đa 300 x 864 mm',N'50 trang/phút, 100 ảnh/phút',1,1,N'USB 2.0',N'',N'Chính hãng',
-N'100% mới, nguyên tem, nguyên hộp, CO/CQ',5,N'2021-02-14 22:02:01',2,'2021-02-19 22:02:01',2,62450000)
+N'100% mới, nguyên tem, nguyên hộp, CO/CQ',4,N'2021-02-14 22:02:01',2,'2021-02-19 22:02:01',2,62450000)
 
 insert into photocopy_machine values(N'Máy quét HP ScanJet N6350',N'Máy scan ADF',
 N'Scan',N'01 x 250 tờ, khay tay 100 tờ',N'Tối đa 210 x 356 mm (ADF), 210 x 297 mm (flatbed)',
 N'50 trang/phút, 100 ảnh/phút',1,1,N'USB/ LAN',N'',N'12 tháng tại nơi sử dụng',
-N'100% mới, nguyên tem, nguyên hộp, CO/CQ',5,N'2021-02-14 22:02:01',2,'2021-02-19 22:02:01',2,13740000)
+N'100% mới, nguyên tem, nguyên hộp, CO/CQ',4,N'2021-02-14 22:02:01',2,'2021-02-19 22:02:01',2,13740000)
 
 insert into photocopy_machine values(N'Máy quét HP Scanjet Pro 3000 S2 (L2737A)',N'Máy scan nạp giấy',
 N'Scan',N'01 x 250 tờ, khay tay 100 tờ',N'Tối đa 215.9 x 864 mm',
 N'20 trang/phút, 40 ảnh/phút',1,1,N'USB',N'',N'12 tháng tại nơi sử dụng',
-N'100% mới, nguyên tem, nguyên hộp, CO/CQ',5,N'2021-02-14 22:02:01',2,'2021-02-19 22:02:01',2,5500000)
+N'100% mới, nguyên tem, nguyên hộp, CO/CQ',4,N'2021-02-14 22:02:01',2,'2021-02-19 22:02:01',2,5500000)
 
 insert into photocopy_machine values(N'Máy quét tài liệu chuyên dụng Canon DR-F120',N'Máy scan ADF',
 N'Scan',N'01 x 250 tờ, khay tay 100 tờ',N'Tối đa A4',
 N'20 trang/phút ; 36 hình/phút',1,1,N'USB 2.0',N'',N'12 tháng tại nơi sử dụng',
-N'100% mới, nguyên tem, nguyên hộp, CO/CQ',5,N'2021-02-14 22:02:01',2,'2021-02-19 22:02:01',2,6700000)
+N'100% mới, nguyên tem, nguyên hộp, CO/CQ',4,N'2021-02-14 22:02:01',2,'2021-02-19 22:02:01',2,6700000)
 
 insert into photocopy_machine values(N'Máy scan 2 mặt không dây Epson DS-570w',N'Máy scan ADF',
 N'Scan',N'01 x 250 tờ, khay tay 100 tờ',N'Tối đa A4',
 N'235 trang/phút',1,1,N'USB/ WiFi',N'',N'12 tháng tại nơi sử dụng',
-N'100% mới, nguyên tem, nguyên hộp, CO/CQ',5,N'2021-02-14 22:02:01',2,'2021-02-19 22:02:01',2,13300000)
+N'100% mới, nguyên tem, nguyên hộp, CO/CQ',4,N'2021-02-14 22:02:01',2,'2021-02-19 22:02:01',2,13300000)
 
 insert into photocopy_machine values(N'Máy scan 2 mặt không dây HP 4500 FN1 (L2749A)',N'Máy scan phẳng không dây ADF',
 N'Scan',N'01 x 250 tờ, khay tay 100 tờ',N'Tối đa A4',
 N'30 trang/phút, 60 hình ảnh/phút',1,1,N' USB/ WiFi',N'',N'12 tháng tại nơi sử dụng',
-N'100% mới, nguyên tem, nguyên hộp, CO/CQ',5,N'2021-02-14 22:02:01',2,'2021-02-19 22:02:01',2,17100000)
+N'100% mới, nguyên tem, nguyên hộp, CO/CQ',4,N'2021-02-14 22:02:01',2,'2021-02-19 22:02:01',2,17100000)
 
 insert into photocopy_machine values(N'Máy scan 2 mặt nhỏ gọn Canon P-215II',N' Máy scan ADF',
 N'Scan',N'01 x 250 tờ, khay tay 100 tờ',N'Tối đa A4',
 N'15 trang/phút (trắng đen); 10 trang/phút (màu)',1,1,N'USB 2.0, USB 3.0',N'',N'12 tháng tại nơi sử dụng',
-N'100% mới, nguyên tem, nguyên hộp, CO/CQ',5,N'2021-02-14 22:02:01',2,'2021-02-19 22:02:01',2,6350000)
+N'100% mới, nguyên tem, nguyên hộp, CO/CQ',4,N'2021-02-14 22:02:01',2,'2021-02-19 22:02:01',2,6350000)
 
 insert into photocopy_machine values(N'Máy scan 2 mặt không dây Epson DS-570w',N' Máy scan ADF',
 N'Scan',N'01 x 250 tờ, khay tay 100 tờ',N'Tối đa A4',
 N'35 trang/phút',1,1,N'USB/ WiFi',N'',N'12 tháng tại nơi sử dụng',
-N'100% mới, nguyên tem, nguyên hộp, CO/CQ',5,N'2021-02-14 22:02:01',2,'2021-02-19 22:02:01',2,13300000)
+N'100% mới, nguyên tem, nguyên hộp, CO/CQ',4,N'2021-02-14 22:02:01',2,'2021-02-19 22:02:01',2,13300000)
 
 insert into photocopy_machine values(N'Máy scan 2 mặt không dây HP 4500 FN1 (L2749A)',N'Máy scan phẳng không dây ADF',
 N'Scan',N'01 x 250 tờ, khay tay 100 tờ',N'Tối đa A4',
 N'30 trang/phút, 60 hình ảnh/phút',1,1,N'USB/ WiFi',N'',N'12 tháng tại nơi sử dụng',
-N'100% mới, nguyên tem, nguyên hộp, CO/CQ',5,N'2021-02-14 22:02:01',2,'2021-02-19 22:02:01',2,17100000)
+N'100% mới, nguyên tem, nguyên hộp, CO/CQ',4,N'2021-02-14 22:02:01',2,'2021-02-19 22:02:01',2,17100000)
 
 insert into photocopy_machine values(N'Máy scan 2 mặt tốc độ cao Canon DR-C240',N'Máy scan ADF',
 N'Scan',N'01 x 250 tờ, khay tay 100 tờ',N'Tối đa A4',
 N'45 trang/phút ; 90 hình/phút',1,1,N'USB 2.0',N'',N'12 tháng tại nơi sử dụng',
-N'100% mới, nguyên tem, nguyên hộp, CO/CQ',5,N'2021-02-14 22:02:01',2,'2021-02-19 22:02:01',2,14300000)
+N'100% mới, nguyên tem, nguyên hộp, CO/CQ',4,N'2021-02-14 22:02:01',2,'2021-02-19 22:02:01',2,14300000)
 
 insert into photocopy_machine values(N'Máy scan 2 mặt tốc độ cao Canon DR-M140',N'Máy scan ADF',
 N'Scan',N'01 x 250 tờ, khay tay 100 tờ',N'Tối đa A4',
 N'40 trang/phút ; 90 hình/phút',1,1,N'USB 2.0',N'',N'12 tháng tại nơi sử dụng',
-N'100% mới, nguyên tem, nguyên hộp, CO/CQ',5,N'2021-02-14 22:02:01',2,'2021-02-19 22:02:01',2,27300000)
+N'100% mới, nguyên tem, nguyên hộp, CO/CQ',4,N'2021-02-14 22:02:01',2,'2021-02-19 22:02:01',2,27300000)
 
 insert into photocopy_machine values(N'Máy scan 2 mặt tốc độ cao Canon DR-M260',N'Máy scan ADF',
 N'Scan',N'01 x 250 tờ, khay tay 100 tờ',N'Tối đa A4',
 N'60 trang/phút ; 90 hình/phút',1,1,N'USB 2.0',N'',N'12 tháng tại nơi sử dụng',
-N'100% mới, nguyên tem, nguyên hộp, CO/CQ',5,N'2021-02-14 22:02:01',2,'2021-02-19 22:02:01',2,25700000)
+N'100% mới, nguyên tem, nguyên hộp, CO/CQ',4,N'2021-02-14 22:02:01',2,'2021-02-19 22:02:01',2,25700000)
 
 insert into photocopy_machine values(N'Máy scan 2 mặt tốc độ cao Epson DS-1630',N'Máy scan ADF',
 N'Scan',N'01 x 250 tờ, khay tay 100 tờ',N'Tối đa A4',
 N'90 hình/phút',1,1,N'USB 2.0',N'',N'12 tháng tại nơi sử dụng',
-N'100% mới, nguyên tem, nguyên hộp, CO/CQ',5,N'2021-02-14 22:02:01',2,'2021-02-19 22:02:01',2,9290000)
+N'100% mới, nguyên tem, nguyên hộp, CO/CQ',4,N'2021-02-14 22:02:01',2,'2021-02-19 22:02:01',2,9290000)
 
 insert into photocopy_machine values(N'Máy scan 2 mặt tốc độ cao Epson DS-410',N'Máy scan ADF',
 N'Scan',N'01 x 250 tờ, khay tay 100 tờ',N'Tối đa A4',
 N'26 trang/phút',1,1,N'USB 2.0',N'',N'12 tháng tại nơi sử dụng',
-N'100% mới, nguyên tem, nguyên hộp, CO/CQ',5,N'2021-02-14 22:02:01',2,'2021-02-19 22:02:01',2,71900000)
+N'100% mới, nguyên tem, nguyên hộp, CO/CQ',4,N'2021-02-14 22:02:01',2,'2021-02-19 22:02:01',2,71900000)
 
 insert into photocopy_machine values(N'Máy scan 2 mặt tốc độ cao Epson DS-530',N'Máy scan ADF',
 N'Scan',N'01 x 250 tờ, khay tay 100 tờ',N'Tối đa A4',
 N'35 trang/phút',1,1,N'USB/ LAN',N'',N'12 tháng tại nơi sử dụng',
-N'100% mới, nguyên tem, nguyên hộp, CO/CQ',5,N'2021-02-14 22:02:01',2,'2021-02-19 22:02:01',2,8450000)
+N'100% mới, nguyên tem, nguyên hộp, CO/CQ',4,N'2021-02-14 22:02:01',2,'2021-02-19 22:02:01',2,8450000)
 
 insert into photocopy_machine values(N'Máy scan 2 mặt tốc độ cao Epson DS-770',N'Máy scan ADF',
 N'Scan',N'01 x 250 tờ, khay tay 100 tờ',N'Tối đa A4',
 N'45 trang/phút',1,1,N'USB 3.0',N'',N'12 tháng tại nơi sử dụng',
-N'100% mới, nguyên tem, nguyên hộp, CO/CQ',5,N'2021-02-14 22:02:01',2,'2021-02-19 22:02:01',2,17800000)
+N'100% mới, nguyên tem, nguyên hộp, CO/CQ',4,N'2021-02-14 22:02:01',2,'2021-02-19 22:02:01',2,17800000)
 
 insert into photocopy_machine values(N'Máy scan 2 mặt tốc độ cao HP 2000 S1 (L2759A)',N'Máy scan ADF',
 N'Scan',N'01 x 250 tờ, khay tay 100 tờ',N' A4/A5',
 N'30 trang/phút hoặc 60 ảnh/phút',1,1,N'USB 2.0',N'',N'12 tháng tại nơi sử dụng',
-N'100% mới, nguyên tem, nguyên hộp, CO/CQ',5,N'2021-02-14 22:02:01',2,'2021-02-19 22:02:01',2,6500000)
+N'100% mới, nguyên tem, nguyên hộp, CO/CQ',4,N'2021-02-14 22:02:01',2,'2021-02-19 22:02:01',2,6500000)
 
 insert into photocopy_machine values(N'Máy scan 2 mặt tốc độ cao HP 2000 S2 (6FW06A)',N'Máy scan ADF',
 N'Scan',N'01 x 250 tờ, khay tay 100 tờ',N' A4/A5',
 N'35 trang/phút hoặc 70 ảnh/phút',1,1,N'USB 3.0',N'',N'12 tháng tại nơi sử dụng',
-N'100% mới, nguyên tem, nguyên hộp, CO/CQ',5,N'2021-02-14 22:02:01',2,'2021-02-19 22:02:01',2,7400000)
+N'100% mới, nguyên tem, nguyên hộp, CO/CQ',4,N'2021-02-14 22:02:01',2,'2021-02-19 22:02:01',2,7400000)
 
 insert into photocopy_machine values(N'Máy scan 2 mặt tốc độ cao HP 5000 S3 (L2751A)',N'Máy scan ADF',
 N'Scan',N'01 x 250 tờ, khay tay 100 tờ',N'Tối đa 216 x 309 mm',
 N' 30 trang/phút, 60 hình ảnh/phút',1,1,N'USB',N'',N'12 tháng tại nơi sử dụng',
-N'100% mới, nguyên tem, nguyên hộp, CO/CQ',5,N'2021-02-14 22:02:01',2,'2021-02-19 22:02:01',2,11500000)
+N'100% mới, nguyên tem, nguyên hộp, CO/CQ',4,N'2021-02-14 22:02:01',2,'2021-02-19 22:02:01',2,11500000)
 
 insert into photocopy_machine values(N'Máy scan 2 mặt tốc độ cao HP 5000 S4 (L2755A)',N'Máy scan ADF',
 N'Scan',N'01 x 250 tờ, khay tay 100 tờ',N'Tối đa 216 x 309 mm',
 N' 30 trang/phút, 60 hình ảnh/phút',1,1,N'USB 2.0/ USB 3.0',N'',N'12 tháng tại nơi sử dụng',
-N'100% mới, nguyên tem, nguyên hộp, CO/CQ',5,N'2021-02-14 22:02:01',2,'2021-02-19 22:02:01',2,14300000)
+N'100% mới, nguyên tem, nguyên hộp, CO/CQ',4,N'2021-02-14 22:02:01',2,'2021-02-19 22:02:01',2,14300000)
 
 insert into photocopy_machine values(N'Máy scan 2 mặt tốc độ cao HP ScanJet 7000 S3 (L2757A)',N'Máy scan ADF',
 N'Scan',N'01 x 250 tờ, khay tay 100 tờ',N'Tối đa 216 x 310 mm',
 N'màu 5.98s/trang; A4 6.51s/trang',1,1,N'USB 2.0/ USB 3.0',N'',N'12 tháng tại nơi sử dụng',
-N'100% mới, nguyên tem, nguyên hộp, CO/CQ',5,N'2021-02-14 22:02:01',2,'2021-02-19 22:02:01',2,17500000)
+N'100% mới, nguyên tem, nguyên hộp, CO/CQ',4,N'2021-02-14 22:02:01',2,'2021-02-19 22:02:01',2,17500000)
 
 insert into photocopy_machine values(N'Máy scan 2 mặt tốc độ cao HP Scanjet 7500 (L2725B)',N'Máy scan ADF',
 N'Scan',N'01 x 250 tờ, khay tay 100 tờ',N'Tối đa 216 x 310 mm',
 N'50 trang/phút, 100 ảnh/phút',1,1,N'USB 2.0/ USB 3.0',N'',N'12 tháng tại nơi sử dụng',
-N'100% mới, nguyên tem, nguyên hộp, CO/CQ',5,N'2021-02-14 22:02:01',2,'2021-02-19 22:02:01',2,26000000)
+N'100% mới, nguyên tem, nguyên hộp, CO/CQ',4,N'2021-02-14 22:02:01',2,'2021-02-19 22:02:01',2,26000000)
 
 
 insert into photocopy_machine values(N'Máy scan 2 mặt tốc độ cao HP ScanJet Pro 3500 F1 (L2741A)',N'Máy scan ADF',
 N'Scan',N'01 x 250 tờ, khay tay 100 tờ',N'Tối đa 216 x 297 mm',
 N'25 trang/phút, 50 hình ảnh/phút',1,1,N'USB 2.0/ USB 3.0',N'',N'12 tháng tại nơi sử dụng',
-N'100% mới, nguyên tem, nguyên hộp, CO/CQ',5,N'2021-02-14 22:02:01',2,'2021-02-19 22:02:01',2,10000000)
+N'100% mới, nguyên tem, nguyên hộp, CO/CQ',4,N'2021-02-14 22:02:01',2,'2021-02-19 22:02:01',2,10000000)
+
 
 insert into photocopy_machine values(N'Máy scan 2 mặt tốc độ cao HP Scanjet 7500 (L2725B)',N'Máy scan ADF',
 N'Scan',N'01 x 250 tờ, khay tay 100 tờ',N'Tối đa 216 x 310 mm',
 N'20 trang/phút, 40 hình ảnh/phút',1,1,N'USB 2.0/ USB 3.0',N'',N'12 tháng tại nơi sử dụng',
-N'100% mới, nguyên tem, nguyên hộp, CO/CQ',5,N'2021-02-14 22:02:01',2,'2021-02-19 22:02:01',2,52500000)
+N'100% mới, nguyên tem, nguyên hộp, CO/CQ',4,N'2021-02-14 22:02:01',2,'2021-02-19 22:02:01',2,52500000)
 
 
 insert into photocopy_machine values(N'Máy scan 2 mặt tự động HP 3000 S3 (L2737A)',N'Máy scan ADF',
 N'Scan',N'01 x 250 tờ, khay tay 100 tờ',N'Tối đa 216 x 310 mm',
 N'35 trang/phút, 70 ảnh/phút',1,1,N'USB 2.0/ USB 3.0',N'',N'12 tháng tại nơi sử dụng',
-N'100% mới, nguyên tem, nguyên hộp, CO/CQ',5,N'2021-02-14 22:02:01',2,'2021-02-19 22:02:01',2,8300000)
+N'100% mới, nguyên tem, nguyên hộp, CO/CQ',4,N'2021-02-14 22:02:01',2,'2021-02-19 22:02:01',2,8300000)
 
 insert into photocopy_machine (machine_name,machine_type,machine_feature,paper_tray,paper_size,print_speed,is_reverse_the_clone,has_ARDF,communication_gate,ink,guarantee,machine_status,category_id,create_at,create_by,update_at,update_by,price) values
 (N'Máy photocopy Canon iR2004',N'Máy photocopy đen trắng Canon',N'Copy – In – Scan màu',N'01 x 250 tờ, khay tay 100 tờ',N'A3/A4','20 trang/phút',0,0,'USB',N'Canon NPG-59 (10.000 trang)',N'12 tháng hoặc 40.000 bản in',N'100% mới, nguyên tem, nguyên hộp, CO/CQ',1,'2021-02-14 22:02:01',1,'2021-02-19 22:02:01',1,3212312),
