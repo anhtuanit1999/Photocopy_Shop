@@ -44,7 +44,16 @@ CREATE TABLE photocopy_machine (
    update_at datetime, /* Ngày cập nhật */
    update_by int foreign key references users(id), /* Người cập nhật */
    price float
-   );
+  );
+
+/* create table users */
+CREATE TABLE photocopy_machine_detail (
+   photo_machine_id int NOT NULL foreign key references photocopy_machine(id), /* Mã của sản phẩm */
+   header nvarchar(500), /* Nội dung tiêu đề */
+   content_first nvarchar(500), /* Nội dung đầu */
+   content_second nvarchar(500), /* Nội dung giữa */
+   content_third nvarchar(500), /* Nội dung cuối */
+ );
 
 /* create table cart */
 CREATE TABLE cart (
