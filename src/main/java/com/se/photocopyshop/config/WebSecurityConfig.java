@@ -29,7 +29,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                     "/webjars/**", "/assets/**","/templates/**", "/css/**", "/fonts/**", "/images/**", "/vendor/**",
                     "/test/**", "/test/save/**",
                     "/sanpham/**", "/taikhoan/**", "/item-detail/**", "/profile/**",
-                    "/productcategory/**").permitAll()
+                    "/productcategory/**", "/form-user/**").permitAll()
             .anyRequest().authenticated()
             .and()
             .formLogin()

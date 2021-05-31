@@ -431,6 +431,7 @@
 											</thead>
 
 											<tbody>
+											<th:block th:each="user: ${users}">
 												<tr>
 													<td class="center">
 														<label class="pos-rel">
@@ -441,32 +442,40 @@
 
 													<td>1</td>
 													<td>
-														<a href="#">ace.com</a>
+														<a href="#"><span th:text="${user.email}"></span></a>
 													</td>
-													<td>$45</td>
-													<td class="hidden-480">3,330</td>
-													<td class="hidden-480">Admin</td>
+													<td><span th:text="${user.pwd}"></span></td>
+													<td class="hidden-480"><span th:text="${user.fullName}"></span></td>
+													<td class="hidden-480"><span th:text="${user.role}"></span></td>
 													
 
 												
 
 													<td>
 														<div class="hidden-sm hidden-xs btn-group">
-															<button class="btn btn-xs btn-success">
-																<i class="ace-icon fa fa-check bigger-120"></i>
-															</button>
+															<a href="#">
+																<button class="btn btn-xs btn-success">
+																	<i class="ace-icon fa fa-check bigger-120"></i>
+																</button>
+															</a>
 
-															<button class="btn btn-xs btn-info">
-																<i class="ace-icon fa fa-pencil bigger-120"></i>
-															</button>
+															<a th:href="${'/taikhoan/update/' + user.id}">
+																<button class="btn btn-xs btn-info">
+																	<i class="ace-icon fa fa-pencil bigger-120"></i>
+																</button>
+															</a>
 
-															<button class="btn btn-xs btn-danger">
-																<i class="ace-icon fa fa-trash-o bigger-120"></i>
-															</button>
+															<a th:href="${'/taikhoan/delete/' + user.id}">
+																<button type="submit" class="btn btn-xs btn-danger">
+																	<i class="ace-icon fa fa-trash-o bigger-120"></i>
+																</button>
+															</a>
 
-															<button class="btn btn-xs btn-warning">
-																<i class="ace-icon fa fa-flag bigger-120"></i>
-															</button>
+															<a href="#">
+																<button class="btn btn-xs btn-warning">
+																	<i class="ace-icon fa fa-flag bigger-120"></i>
+																</button>
+															</a>
 														</div>
 
 														<div class="hidden-md hidden-lg">
@@ -504,7 +513,7 @@
 														</div>
 													</td>
 												</tr>
-
+											</th:block>
 									
 											</tbody>
 										</table>
