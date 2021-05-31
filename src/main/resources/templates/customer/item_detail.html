@@ -23,7 +23,7 @@
 <body>
 
   <!-- Navigation -->
-  <nav class="navb navbar navbar-expand-lg fixed-top">
+  <nav class="navb navbar navbar-expand-lg fixed-top" >
     <div class="container">
       <a class="navbar-brand"th:href="@{/customer/index.html}">Start Bootstrap</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,20 +38,20 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navmenu navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" th:href="@{/customer/index.html}"><img th:src="@{/assets/images//home.png}" alt="">Home
+            <a class="nav-link" th:href="@{/home}"><img th:src="@{/assets/images/home.png}" alt="">Home
               <span class="sr-only">(current)</span>
             </a>
           </li>
-       
+
           <li class="nav-item">
-            <a class="nav-link" href="#"><img src="images/customer.png" alt="">Services</a>
+            <a class="nav-link" th:href="@{/profile/customer}"><img th:src="@{/assets/images/customer.png}" alt="">Profile</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" th:href="@{/customer/shoppingcart.html}"><img
-                    th:src="@{/assets/images/shopping-cart.png}" alt="">   Giỏ hàng</a>
+            <a class="nav-link" th:href="@{/cart}"><img
+                    th:src="@{/assets/images/shopping-cart.png}" alt="">  Giỏ hàng</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" th:href="@{/login.html}"><img th:src="@{/assets/images/images/enter.png}" alt="">  Đăng nhập</a>
+            <a class="nav-link" th:href="@{/login}"><img th:src="@{/assets/images/enter.png}" alt="">  Đăng nhập</a>
           </li>
         </ul>
       </div>
@@ -65,10 +65,14 @@
 
       <div class="menu col-lg-3">
         <h1 class="my-4">Shop Name</h1>
-        <div class="menu list-group">
-          <a href="#" class="list-group-item">Category 1</a>
-          <a href="#" class="list-group-item">Category 2</a>
-          <a href="#" class="list-group-item">Category 3</a>
+
+        <div class="menu list-group"th:each="category:${categoryMachines}">
+
+
+
+          <a href="#" class="list-group-item"><span th:text="${category.getName()}"></span></a>
+
+
         </div>
       </div>
       <!-- /.col-lg-3 -->

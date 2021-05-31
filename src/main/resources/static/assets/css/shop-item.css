@@ -7,7 +7,7 @@ body {
   padding-top: 56px;
 }
 .card-title{
-  margin : 0 px;
+  margin : 0px;
 
   display: inline-flex;
 }
@@ -30,75 +30,18 @@ body {
   }
 }
 
-.cart {
-  background-color: #fff;
-  padding: 4vh 5vh;
-  border-bottom-left-radius: 1rem;
-  border-top-left-radius: 1rem
-}
 
-@media(max-width:767px) {
-  .cart {
-      padding: 4vh;
-      border-bottom-left-radius: unset;
-      border-top-right-radius: 1rem
-  }
-}
 
-.summary {
-  background-color: #ddd;
-  border-top-right-radius: 1rem;
-  border-bottom-right-radius: 1rem;
-  padding: 4vh;
-  color: rgb(65, 65, 65)
-}
-
-@media(max-width:767px) {
-  .summary {
-      border-top-right-radius: unset;
-      border-bottom-left-radius: 1rem
-  }
-}
-
-.summary .col-2 {
-  padding: 0
-}
-
-.summary .col-10 {
-  padding: 0
-}
 
 .row {
   margin: 0
 }
 
-.title b {
-  font-size: 1.5rem
-}
-
-.main {
-  margin: 0;
-  padding: 2vh 0;
-  width: 100%
-}
-
-.col-2,
-.col {
-  padding: 0 1vh
-}
 
 a {
   padding: 0 1vh
 }
 
-.close {
-  margin-left: auto;
-  font-size: 0.7rem
-}
-
-img {
-  width: 3.5rem
-}
 
 .back-to-shop {
   margin-top: 4.5rem
@@ -183,6 +126,17 @@ a:hover {
   background-color: red;
   border: 0px;
 }
+.navb{
+  background-color: #3d84b8;
+
+}
+.shop_menu{
+  background-color: #F5F5F5;
+}
+
+.navb a{
+  color: white;
+}
 .search{
   width: 400px;
   height: 30px;
@@ -200,19 +154,12 @@ a:hover {
   border-radius: 5px;
   height: inherit;
   margin-top: 0px;
-  
+
   margin-top: 0px;
   background-color: gray;
 }
-
-.navb{
-  background-color: #3d84b8;
-}
-.menu{
-  background-color: #F5F5F5;
-}
-.navb a{
-  color: white;
+.menu a{
+  text-decoration: none;
 }
 .menu a:hover{
   background-color:#3d84b8 ;
