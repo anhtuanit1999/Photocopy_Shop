@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+<%@ page language="java" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta charset="utf-8" />
@@ -400,71 +402,86 @@
                     <div class="col-xs-12">
                         <!-- PAGE CONTENT BEGINS -->
 
-                        <form
-                        >
+                        <form:form modelAttribute="product" method="post" action="${home/save}">
                             <div class="form-group">
                                 <label for="name">Tên sản phẩm:</label>
-                                <input type="email"  class="form-control" id="name" placeholder="Tên sản phẩm " name="name"   >
+                                <input type="email"  class="form-control" id="name" placeholder="Tên sản phẩm " name="name"
+                            value="<c:out value='${product.machineName}' />"  >
                             </div>
                             <div class="form-group">
                                 <label for="type">Loại sản phẩm:</label>
-                                <input type="product_type"  class="form-control" id="type" placeholder="Loại sản phẩm" name="type">
+                                <input pat type="product_type"  class="form-control" id="type" placeholder="Loại sản phẩm"
+                            name="type"   value="<c:out value='${product.machineType}' />">
                             </div>
                             <div class="form-group">
                                 <label for="machine_feature">Chức năng:</label>
-                                <input type="machine_feature" class="form-control" id="machine_feature" placeholder="Chức năng" name="machine_feature">
+                                <input type="machine_feature" class="form-control" id="machine_feature" placeholder="Chức năng" name="machine_feature"
+                            value="<c:out value='${product.machineFeature}' />">
                             </div>
                             <div class="form-group">
                                 <label for="paper_tray">Khay giấy:</label>
-                                <input type="paper_tray"  class="form-control" id="paper_tray" placeholder="Khay giấy" name="paper_tray">
+                                <input type="paper_tray"  class="form-control" id="paper_tray" placeholder="Khay giấy" name="paper_tray"
+                            value="<c:out value='${product.paperTray}' />">
                             </div>
                             <div class="form-group">
                                 <label for="paper_size">Khổ giấy:</label>
-                                <input type="paper_size"class="form-control" id="paper_size" placeholder="Khổ giấy" name="paper_size">
+                                <input type="paper_size"class="form-control" id="paper_size" placeholder="Khổ giấy" name="paper_size"
+                            value="<c:out value='${product.paperSize}' />">
                             </div>
                             <div class="form-group">
                                 <label for="print_speed">Tốc độ in:</label>
-                                <input type="print_speed"class="form-control" id="print_speed" placeholder="Tốc độ in" name="print_speed">
+                                <input type="print_speed"class="form-control" id="print_speed" placeholder="Tốc độ in" name="print_speed"
+                            value="<c:out value='${product.printSpeed}' />">
                             </div>
                             <div class="form-group">
                                 <label for="dao_mat">Đảo mặt:</label>
-                                <input type="dao_mat" class="form-control" id="dao_mat" placeholder="Có/Không" name="dao_mat">
+                                <input type="dao_mat" class="form-control" id="dao_mat" placeholder="Có/Không" name="dao_mat"
+                            value="<c:out value='${product.isReverse}' />">
                             </div>
                             <div class="form-group">
                                 <label for=" has_ARDF">Bộ nạp & đảo bản gốc:</label>
-                                <input type=" has_ARDF"  class="form-control" id=" has_ARDF" placeholder="Có/Không" name=" has_ARDF">
+                                <input type=" has_ARDF"  class="form-control" id=" has_ARDF" placeholder="Có/Không" name=" has_ARDF"
+                            value="<c:out value='${product.hasARDF}' />">
                             </div>
                             <div class="form-group">
                                 <label for="communication_gate">Cổng kết nối:</label>
-                                <input type="communication_gate" class="form-control" id="communication_gate" placeholder="Cổng giao tiếp" name="communication_gate">
+                                <input type="communication_gate" class="form-control" id="communication_gate" placeholder="Cổng giao tiếp" name="communication_gate"
+                            value="<c:out value='${product.communicationGate}' />">
                             </div>
                             <div class="form-group">
                                 <label for="ink">Mực:</label>
-                                <input type="ink" class="form-control" id="ink" placeholder="Mực" name="ink">
+                                <input type="ink" class="form-control" id="ink" placeholder="Mực" name="ink"
+                            value="<c:out value='${product.ink}' />">
                             </div>
                             <div class="form-group">
                                 <label for="guarantee">Bảo hành:</label>
-                                <input type="guarantee" class="form-control" id="guarantee" placeholder="Chế độ bảo hành" name="guarantee">
+                                <input type="guarantee" class="form-control" id="guarantee" placeholder="Chế độ bảo hành" name="guarantee"
+                            value="<c:out value='${product.guarantee}' />">
                             </div>
                             <div class="form-group">
                                 <label for="machine_status">Trạng thái:</label>
-                                <input type="machine_status"class="form-control" id="machine_status" placeholder="Trạng thái" name="machine_status">
+                                <input type="machine_status"class="form-control" id="machine_status" placeholder="Trạng thái" name="machine_status"
+                            value="<c:out value='${product.machineStatus}' />">
                             </div>
                             <div class="form-group">
                                 <label for="category_id">Mã loại:</label>
-                                <input type="category_id" class="form-control" id="category_id" placeholder="Mã loại" name="category_id">
+                                <input type="category_id" class="form-control" id="category_id" placeholder="Mã loại" name="category_id"
+                            value="<c:out value='${product.categoryId}' />">
                             </div>
                             <div class="form-group">
                                 <label for="create_at">Ngày thêm:</label>
-                                <input type="create_at" class="form-control" id="create_at" placeholder="Ngày" name="create_at">
+                                <input type="create_at" class="form-control" id="create_at" placeholder="Ngày" name="create_at"
+                            value="<c:out value='${product.createAt}' />">
                             </div>
                             <div class="form-group">
                                 <label for="update_by">Ngày cập nhật:</label>
-                                <input type="update_by"class="form-control" id="update_by" placeholder="Ngày" name="update_by">
+                                <input type="update_by"class="form-control" id="update_by" placeholder="Ngày" name="update_by"
+                            value="<c:out value='${product.createBy}' />">
                             </div>
                             <div class="form-group">
                                 <label for="price">Giá tiền:</label>
-                                <input type="price" class="form-control"id="price" placeholder="Giá" name="price">
+                                <input type="price" class="form-control"id="price" placeholder="Giá" name="price"
+                            value="<c:out value='${product.price}' />">
                             </div>
 
                             <button type="submit" class="btn btn-default" data-position="absolute">Thêm</button>

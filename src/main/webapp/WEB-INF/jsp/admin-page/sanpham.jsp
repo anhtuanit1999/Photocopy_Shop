@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" <%@ page language="java" pageEncoding="UTF-8"%>>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta charset="utf-8" />
@@ -545,21 +546,22 @@
                                                     <span class="lbl"></span>
                                                 </label>
                                             </th>
-                                            <th>Mã NSX</th>
-                                            <th>Tên NSX</th>
-                                            <th class="hidden-480">Quốc gia</th>
+                                            <th>Mã sản phẩm</th>
+                                            <th>Tên sản phẩm</th>
+                                            <th class="hidden-480">Loại sản phẩm</th>
 
                                             <th>
                                                 <i class="ace-icon fa fa-clock-o bigger-110 hidden-480"></i>
                                                 Update
                                             </th>
-                                            <th class="hidden-480">Status</th>
+                                            <th class="hidden-480">Trạng thái</th>
 
                                             <th></th>
                                         </tr>
                                         </thead>
 
                                         <tbody>
+                                        <c:forEach items="${photoMachines}" var="photoMachine">
                                         <tr>
                                             <td class="center">
                                                 <label class="pos-rel">
@@ -569,16 +571,18 @@
                                             </td>
 
                                             <td>
-                                                <a href="#">app.com</a>
+                                               <c:out value="${photoMachine.id}"></c:out>
                                             </td>
-                                            <td>$45</td>
-                                            <td class="hidden-480">3,330</td>
-                                            <td>Feb 12</td>
+                                            <td><c:out value="${photoMachine.machineName}"></c:out></td>
+                                            <td class="hidden-480"><c:out value="${photoMachine.machineType}"></c:out></td>
+                                            <td><c:out value="${photoMachine.guarantee}"></c:out></td>
 
                                             <td class="hidden-480">
-                                                <span class="label label-sm label-warning">Expiring</span>
+                                                <c:out value="${photoMachine.machineStatus}"></c:out>
                                             </td>
-
+                                            <c:url var="delete" value="">
+                                                <c:param name="personId" value="${photoMachine.id}" />
+                                            </c:url>
                                             <td>
                                                 <div class="hidden-sm hidden-xs action-buttons">
                                                     <a class="blue" href="#">
@@ -589,7 +593,7 @@
                                                         <i class="ace-icon fa fa-pencil bigger-130"></i>
                                                     </a>
 
-                                                    <a class="red" href="#">
+                                                    <a class="red" href="${delete}">
                                                         <i class="ace-icon fa fa-trash-o bigger-130"></i>
                                                     </a>
                                                 </div>
@@ -621,6 +625,7 @@
                                                                 <a href="#" class="tooltip-error" data-rel="tooltip" title="Delete">
 																				<span class="red">
 																					<i class="ace-icon fa fa-trash-o bigger-120"></i>
+
 																				</span>
                                                                 </a>
                                                             </li>
@@ -629,7 +634,7 @@
                                                 </div>
                                             </td>
                                         </tr>
-
+                                        </c:forEach>
 
                                         >
 

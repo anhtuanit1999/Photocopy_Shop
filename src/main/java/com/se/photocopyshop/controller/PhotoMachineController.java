@@ -3,12 +3,14 @@ package com.se.photocopyshop.controller;
 import com.se.photocopyshop.dao.PhotoMachineRepository;
 import com.se.photocopyshop.dao.ProductRepository;
 import com.se.photocopyshop.entity.PhotoMachine;
+import com.se.photocopyshop.entity.ProductCategory;
+import com.se.photocopyshop.entity.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.*;
+
+import javax.servlet.http.HttpServletRequest;
 
 @Controller
 @RequestMapping(value = {"home", ""})
@@ -25,13 +27,13 @@ public class PhotoMachineController {
 
 
 
-    @GetMapping
-    public String sayHello(Model model) {
+    @GetMapping("/list")
+    public String getAll(Model model) {
         var photoMachines = photoMachineRepository.findAll();
         model.addAttribute("photoMachines", photoMachines);
         var categoryMachines = categoryMachineRepository.findAll();
         model.addAttribute("categoryMachines", categoryMachines);
-        return "customer/index";
+        return "admin-page/sanpham";
     }
     @GetMapping("/item-detail")
     public String category(Model model) {
@@ -41,5 +43,25 @@ public class PhotoMachineController {
         return "customer/item_detail";
     }
 
+    @GetMapping("/delete")
+    public String delete(@RequestParam("productId") int theId) {
+
+        // delete the employee
+        photoMachineRepository.deleteById(theId);
+
+        // redirect to /employees/list
+        return "redirect:/list";
+
+    }
+    @PostMapping("/save")
+    public String saveProduct(@ModelAttribute("product") PhotoMachine theProduct, ModelMap modelMap) {
+        modelMap.addAttribute("product", theProduct);
+        photoMachineRepository.save(theProduct);
+        return "admin/form-addproduct";
+    }
+    @GetMapping("/save")
+    public String saveProduct(){
+        return "admin-page/sanpham";
+    }
 
 }

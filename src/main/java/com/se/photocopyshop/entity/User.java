@@ -43,7 +43,9 @@ public class User implements Serializable {
         this.phone = phone;
         this.role = role;
     }
-
+    public  User(int id){
+        this.id = id;
+    }
     public int getId() {
         return id;
     }
